@@ -1,0 +1,184 @@
+/*
+titel: App
+beschrijving: De MailController is verantwoordelijk voor het verzenden van e-mails.
+    De sendEmail methode haalt de welkomstmail op en verzendt deze naar het opgegeven adres.
+auteur: Pascal Thomasse Mol
+versie: 7
+aanmaaktdatum: 23 jun 2023
+laatste wijzigingsdatum: 14 aug 2023
+*/
+
+
+body {
+  height: 100%;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.page-content {
+  min-height: 800px;
+}
+
+.page-footer {
+  margin-top: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.center{
+  text-align: center;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.logo-image {
+  height: 60px;
+  padding: 0 1rem;
+}
+
+.company-name {
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-right: auto;
+  font-size: 2rem;
+  color: #2691d9;
+}
+
+@media (max-width: 768px) {
+  .company-name {
+    font-size: 1.5rem;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.header-text {
+  text-align: right;
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 0.8rem;
+  color: #2691d9;
+}
+
+.header-text-line {
+  margin-bottom: 4px;
+}
+
+.header-text-line:hover {
+  font-size: 1rem;
+}
+
+.imagebox {
+  position: relative;
+}
+
+.discountbox {
+  position: absolute;
+  bottom: 5px;
+  right: 0px;
+  background-color: rgb(138, 209, 176);
+  padding: 0.3rem;
+  border-radius: 10% 00% 0% 10%;
+}
+
+.card-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.banner_text {
+  color: white;
+  text-shadow: 1px 1px rgb(184, 178, 178);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+/* Media queries voor kleinere schermen */
+
+@media screen and (max-width: 868px) {
+  .banner_text {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .banner_text {
+    font-size: 2rem;
+  }
+}
+
+.fail {
+  font-size: 0.8rem;
+  color: rgb(134, 13, 13);
+}
+
+.success {
+  font-size: 1rem;
+  color: green;
+}
+
+/* CSS for cart items */
+.cart-list {
+  list-style: none;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+}
+
+.item-image img {
+  width: 5rem;
+  margin-right: 3rem;
+}
+
+.item-details {
+  flex-grow: 1;
+}
+
+.item-name-quantity {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.item-name {
+  font-style: italic;
+}
+
+.item-quantity {
+  font-weight: bold;
+  background-color: white;
+  padding: 2px 5px;
+}
+
+.item-total{
+  font-weight: bold;
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
