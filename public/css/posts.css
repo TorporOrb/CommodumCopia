@@ -1,0 +1,62 @@
+/*
+titel: Posts
+beschrijving: De MailController is verantwoordelijk voor het verzenden van e-mails.
+    De sendEmail methode haalt de welkomstmail op en verzendt deze naar het opgegeven adres.
+auteur: Pascal Thomasse Mol
+versie: 2
+aanmaaktdatum: 23 jun 2023
+laatste wijzigingsdatum: 29 jun 2023
+*/
+
+.postComponent {
+    position: relative;
+    color: white;
+    text-shadow: 1px 1px gray;
+}
+  .headerTL {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  margin: 1rem;
+}
+
+.headerTL h1 {
+  font-size: 4rem;
+}
+
+.textBL {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+  margin: 1rem;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .headerTL h1 {
+    font-size: 1rem;
+  }
+
+  .headerTL h2 {
+    font-size: 0.8rem;
+  }
+
+  .textBL h4 {
+    font-size: 0.5rem;
+  }
+}
+
+/* Media Query for Tablets */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .headerTL h1 {
+    font-size: 3rem;
+  }
+
+  .headerTL h2 {
+    font-size: 2rem;
+  }
+
+  .textBL h4 {
+    font-size: 1.25rem;
+  }
+}
